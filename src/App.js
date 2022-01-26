@@ -15,7 +15,7 @@ const navbar = css`
   z-index: 101;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  /* display: -ms-flexbox; */
   display: flex;
   width: 100%;
   height: 50px;
@@ -70,7 +70,7 @@ const navigationMenuButton = css`
 const openWrap = css`
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  /* display: -ms-flexbox; */
   display: flex;
   height: 25px;
   -webkit-box-align: center;
@@ -96,7 +96,7 @@ const navigationText = css`
 const hamburger = css`
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  /* display: -ms-flexbox; */
   display: flex;
   width: 25px;
   height: 10px;
@@ -131,7 +131,7 @@ const hamburgerLine2 = css`
 const closeWrap = css`
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  /* display: -ms-flexbox; */
   display: flex;
   height: 25px;
   -webkit-box-orient: horizontal;
@@ -163,7 +163,7 @@ const mainHeroSection = css`
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  /* display: -ms-flexbox; */
   display: flex;
   min-height: 90vh;
   padding: 6.5em 2em 3.5em;
@@ -192,7 +192,7 @@ const mainHeroContent = css`
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  /* display: -ms-flexbox; */
   display: flex;
   max-width: 85%;
   -webkit-box-orient: vertical;
@@ -275,7 +275,7 @@ const allCaps1 = css`
 const arrowDown = css`
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  /* display: -ms-flexbox; */
   display: flex;
   width: 64px;
   height: 64px;
@@ -309,7 +309,7 @@ const cardImageWrapper = css`
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  /* display: -ms-flexbox; */
   display: flex;
   overflow: hidden;
   width: 100%;
@@ -349,7 +349,7 @@ const footerContainer = css`
 const footerContentWrapper = css`
   display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flexbox;
+  /* display: -ms-flexbox; */
   display: flex;
   padding-bottom: 32px;
   -webkit-box-pack: start;
@@ -416,13 +416,13 @@ function App() {
           <div css={openWrap}>
             <div css={navigationText}>Menu</div>
             <div css={hamburger}>
-              <div css={hamburgerLine}></div>
-              <div css={hamburgerLine2}></div>
+              <div css={hamburgerLine} />
+              <div css={hamburgerLine2} />
             </div>
           </div>
           <div css={closeWrap}>
             <div css={navigationText}>Close</div>
-            <div css={closeButton}></div>
+            <div css={closeButton} />
           </div>
         </div>
       </div>
@@ -468,7 +468,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div css={paddingLeft}></div>
+          <div css={paddingLeft} />
         </div>
       </section>
       <div css={footer}>
